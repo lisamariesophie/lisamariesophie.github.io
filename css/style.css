@@ -157,7 +157,7 @@ h2 {
   float: right;
   display: inline-block;
   background: url("../img/thomas-william-660882-unsplash.jpg") no-repeat;
-  background-size: cover;
+  background-size: 100%;
   height: 500px;
   width: 65%;
 
