@@ -112,6 +112,7 @@ h2 {
 
 .backgroundimage{
   min-height: 700px;
+  width: 100%;
   background: url('../img/gades-photography-711077-unsplash.jpg') no-repeat;
   background-size: 100%;
   background-position: 0px -220px;
@@ -140,13 +141,15 @@ h2 {
 
 #showcase{
   margin-top: 80px;
+  width: 100%;
   height: 500px;
 }
 
 #showcase .textbox{
   float: left;
   height: 460px;
-  width: 25%;
+  min-width: 15%;
+  width: 30%;
   margin-right: 10px;
   display: inline-block;
 }
@@ -154,12 +157,11 @@ h2 {
   float: right;
   display: inline-block;
   background: url("../img/thomas-william-660882-unsplash.jpg") no-repeat;
-  background-size: 100%;
+  background-size: cover;
   height: 500px;
-  width: 70%;
+  width: 65%;
 
 }
-
 
 .book{
   margin-top: 50px;
@@ -173,6 +175,7 @@ h2 {
 .book .textbox{
   float: right;
   width: 25%;
+  min-width: 15%;
   height: 460px;
   margin-top: 50px;
   margin-bottom: 50px;
