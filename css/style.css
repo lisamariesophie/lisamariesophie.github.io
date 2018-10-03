@@ -34,7 +34,7 @@ header a{
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 header li{
@@ -176,8 +176,8 @@ h2 {
   width: 25%;
   height: 460px;
   margin-top: 50px;
-  margin-right: 50px;
   margin-bottom: 50px;
+  margin-right: 50px;
 
 }
 
@@ -185,12 +185,59 @@ h2 {
   margin-top: 50px;
   height: 300px;
   background-color: #f8f2ec;
-
+  padding: 20px;
 }
+
 .slideshow h1{
-  font-size: 100px;
   font-family: 'Rochester', cursive;
-  color: #6E1114;
+  color: #9BA48E;
+  font-size: 40px;
+  text-align: center;
+}
+
+.item-1,
+.item-2,
+.item-3 {
+	position: absolute;
+  display: block;
+  color: #C58797;
+  text-align: center;
+  width: 60%;
+  font-size: 24px;
+
+	animation-duration: 30s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+}
+
+.item-1{
+	animation-name: anim-1;
+}
+
+.item-2{
+	animation-name: anim-2;
+}
+
+.item-3{
+	animation-name: anim-3;
+}
+
+@keyframes anim-1 {
+	0%, 8.3% { left: 20%; opacity: 0; }
+  8.3%,25% { left: 20%; opacity: 1; }
+  33.33%, 100% { left: 20%; opacity: 0; }
+}
+
+@keyframes anim-2 {
+	0%, 33.33% { left: 20%; opacity: 0; }
+  41.63%, 58.29% { left: 20%; opacity: 1; }
+  66.66%, 100% { left: 20%; opacity: 0; }
+}
+
+@keyframes anim-3 {
+	0%, 66.66% { left: 20%; opacity: 0; }
+  74.96%, 91.62% { left: 20%; opacity: 1; }
+  100% { left: 20%; opacity: 0; }
 }
 
 #boxes{
@@ -229,7 +276,7 @@ footer{
   margin-left: 10px;
   margin-right: 10px;
   height: 60%;
-  width: 31.5%;
+  width: 31%;
   display: inline-block;
 }
 .fboxbottom{
