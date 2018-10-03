@@ -153,14 +153,13 @@ h2 {
 #showcase .picturebox{
   float: right;
   display: inline-block;
+  background: url("../img/thomas-william-660882-unsplash.jpg") no-repeat;
+  background-size: 100%;
   height: 500px;
   width: 70%;
 
 }
-#showcase .picturebox img{
-  width: 100%;
-  height: 100%;
-}
+
 
 .book{
   margin-top: 50px;
@@ -276,7 +275,7 @@ footer{
   margin-left: 10px;
   margin-right: 10px;
   height: 60%;
-  width: 31%;
+  width: 31.5%;
   display: inline-block;
 }
 .fboxbottom{
