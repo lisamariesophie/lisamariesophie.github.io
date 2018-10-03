@@ -75,7 +75,6 @@ header li{
 }
 header nav{
   margin-top: 20px;
-
 }
 
 header .current a{
@@ -114,6 +113,7 @@ h2 {
 .backgroundimage{
   min-height: 700px;
   background: url('../img/gades-photography-711077-unsplash.jpg') no-repeat;
+  background-size: 100%;
   background-position: 0px -220px;
   z-index: 1;
 
