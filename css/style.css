@@ -139,28 +139,31 @@ h2 {
   margin-top: 40px;
 }
 
-#showcase{
-  margin-top: 80px;
+.boxes1{
+  float: left;
+  margin-top: 50px;
   width: 100%;
-  height: 500px;
+  height: 450px;
 }
 
-#showcase .textbox{
+.boxes1 .textbox{
   float: left;
-  height: 460px;
-  min-width: 15%;
-  width: 30%;
+  min-height: 100%;
+  width: 25%;
   margin-right: 10px;
   display: inline-block;
 }
-#showcase .picturebox{
+
+.boxes1 .picturebox{
   float: right;
   display: inline-block;
-  background: url("../img/thomas-william-660882-unsplash.jpg") no-repeat;
-  background-size: 100%;
-  height: 500px;
-  width: 65%;
+  height: 100%;
+  max-width: 70%;
+}
 
+.boxes1 .picturebox img{
+  width: 100%;
+  height: 100%;
 }
 
 .book{
@@ -242,21 +245,21 @@ h2 {
   100% { left: 20%; opacity: 0; }
 }
 
-#boxes{
+.boxes{
   margin-top: 50px;
   width: 100%;
   min-height: 300px;
   max-height: 400px;
 
 }
-#boxes .box{
+.boxes .box{
   float: left;
   max-width: 19%;
   margin: 5px;
   height: 100%;
 
 }
-#boxes .box img{
+.boxes .box img{
   width: 100%;
   height: 100%;
 }
