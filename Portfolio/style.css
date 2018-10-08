@@ -1,0 +1,350 @@
+@import 'https://fonts.googleapis.com/css?family=Alegreya+Sans';
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+body{
+  background: #FFFBF9;
+  font-family: sans-serif;
+  margin: 0 auto;
+}
+
+section{
+  margin: 2% 0 2% 0;
+}
+
+.container{
+  padding: 1%;
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+p{
+  font-family: 'Alegreya Sans' sans-serif;
+  color: #0D1321;
+  font-size: 150%;
+  line-height: 155%;
+  padding: 3%;
+  margin: 3%;
+  text-indent: 2%;
+  text-align: justify;
+}
+
+h1{
+  margin: 2%;
+  font-size: 250%;
+  line-height: 150%;
+  font-weight: 500;
+  color: #0D1321;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 0;
+}
+
+h2{
+  font-size: 250%;
+  line-height: 150%;
+  font-weight: 500;
+  color: #0D1321;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 0;
+}
+
+h3{
+  font-size: 175%;
+  line-height: 155%;
+  font-weight: 500;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 0;
+}
+
+h6{
+  font-size: 150%;
+  line-height: 130%;
+  color: #0D1321;
+  text-align: center;
+  font-weight: normal;
+  padding: 0;
+  margin: 3%;
+}
+
+a{
+  color: #524C56;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover{
+  color: #F24236;
+}
+
+img{
+  display: block;
+  margin: auto;
+  max-width: 100%;
+  height: auto;
+  width: auto;
+  margin-bottom: -4px;
+}
+
+.button {
+  padding: 1% 2% 1% 2%;
+  margin-left: -2%;
+  font-size: 80%;
+  text-transform: uppercase;
+  border: 2px solid #F24236;
+  border-radius: 10px;
+  background-color: #fff;
+  color: #F24236;
+  -webkit-transition: background .5s linear;
+  -moz-transition: background .5s linear;
+  -ms-transition: background .5s linear;
+  -o-transition: background .5s linear;
+  transition: background .5s linear;
+  -webkit-transition: color .5s linear;
+  -moz-transition: color .5s linear;
+  -ms-transition: color .5s linear;
+  -o-transition: color .5s linear;
+   transition: color .5s linear;
+}
+
+#background{
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+#header-background{
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-width: 2000px;
+  height: 650px;
+  background: url('./img/pictures/banner.jpg') no-repeat;
+  background-size: 100%;
+}
+
+.circle{
+  margin: 0 auto;
+  position: absolute;
+  top: 20%;
+  left: 40%;
+  background-image:url("./img/pictures/profile.jpg");
+  background-size: 100%;
+  width:22%;
+  border: 3px solid #748CAB;
+  border-radius:50%;
+
+  }
+
+.circle:after{
+  content:"";
+  padding-bottom:100%;
+  display:block;
+  }
+
+.profile{
+  position: absolute;
+  text-align: center;
+  top: 75%;
+  left: 38%;
+
+}
+header{
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  background-color: rgba(13, 19, 33, 0.7);
+  z-index: 3;
+  top: 0;
+  left: 0;
+}
+
+#logo{
+  margin: 20px;
+  float: right;
+  width: 200px;
+  height: 60px;
+  background: url('') no-repeat center;
+}
+
+/*--- Start Nav ---*/
+nav{
+  float: left;
+  padding: 1% 0 1% 2%;
+  overflow: auto;
+}
+
+#menu-icon{
+  display: hidden;
+  width: 40px;
+  height: 40px;
+  background: url('' center);
+}
+
+ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li{
+  font-family: 'Alegreya Sans' sans-serif;
+  text-transform: uppercase;
+  font-size: 110%;
+  display: inline-block;
+  float: left;
+  padding: 5px 15px 0 15px;
+}
+
+nav ul li a{
+  color: #fff;
+  padding: 10%;
+  -webkit-transition: color .5s linear;
+  -moz-transition: color .5s linear;
+  -ms-transition: color .5s linear;
+  -o-transition: color .5s linear;
+  transition: color .5s linear;
+}
+
+a:hover{
+  color: #F24236;
+}
+/*--- End Navigation ---*/
+
+#introduction{
+  height: 300px;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+#introduction .button:hover{
+  color: #fff;
+  background-color: #F24236;
+}
+
+#introduction p{
+  text-align: center;
+}
+
+#portfolio{
+  background-color: #49516F;
+  height: 800px;
+}
+
+#portfolio h1{
+  color: #fff;
+}
+
+.xop-section {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0% 2%;
+}
+
+.xop-grid {
+	margin: 2% 0 0 0;
+	padding: 0;
+	list-style: none;
+	display: block;
+	text-align: center;
+	width: 100%;
+}
+
+.xop-grid:after {
+	clear: both;
+}
+
+.xop-grid:after, .xop-box:before {
+	content: '';
+	display: table;
+}
+
+.xop-grid li {
+	width: 450px;
+	height: 280px;
+	display: inline-block;
+	margin: 20px;
+}
+
+.xop-box {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	cursor: pointer;
+    border-radius: 10px;
+    -webkit-transition: 0.3s ease-in-out,
+    -webkit-transform 0.3s ease-in-out;
+	-moz-transition:  0.3s ease-in-out,
+    -moz-transform 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out,
+    transform 0.3s ease-in-out, ;
+}
+
+.xop-box:hover {
+	transform: scale(1.05);
+}
+
+.xop-img-1 {
+	background: url('./img/pictures/universeofbaking.jpg') no-repeat;
+  background-size: 100%;
+}
+
+.xop-img-2 {
+  background: url('./img/pictures/universeofbaking.jpg') no-repeat;
+  background-size: 100%;
+}
+
+.xop-img-3 {
+  background: url('./img/pictures/universeofbaking.jpg') no-repeat;
+  background-size: 100%;
+}
+
+.xop-img-4 {
+  background: url('./img/pictures/universeofbaking.jpg') no-repeat;
+  background-size: 100%;
+}
+
+.clearfix-padding{
+  clear: both;
+  padding: 2%;
+}
+
+/*--- Start Footer ---*/
+footer{
+  background: #FFFBF9;
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+}
+
+footer p{
+  font-size: 100%;
+  color: #F24236;
+  text-align: center;
+  font-weight: normal;
+}
+
+.one-third{
+  width: 33.333333%;
+  float: left;
+  text-align: center;
+}
+
+.icon-wrap{
+  margin: 0 auto;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  margin-top: 8%;
+  margin-bottom: 2%;
+}
