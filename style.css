@@ -95,12 +95,12 @@ img{
 }
 
 .button {
-  padding: 2%;
-  margin-left: -2%;
+  padding: 2.5%;
+  margin-left: -2.5%;
   font-size: 80%;
   text-transform: uppercase;
   border: 2px solid #F24236;
-  border-radius: 10px;
+  border-radius: 7px;
   background-color: #fff;
   color: #F24236;
   -webkit-transition: background .5s linear;
@@ -189,7 +189,7 @@ nav{
   background: url('./img/icons/menu.png') no-repeat;
   background-size: contain;
   width: 5%;
-  height: 55%;
+  height: 50%;
 }
 
 ul{
