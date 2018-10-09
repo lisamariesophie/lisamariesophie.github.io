@@ -126,10 +126,11 @@ img{
   top: 0;
   left: 0;
   width: 100%;
+  width: 100%;
+  height: auto;
   max-width: 2000px;
-  height: 650px;
-  background: url('./img/pictures/banner.jpg') no-repeat;
-  background-size: 100%;
+  z-index: 1;
+
 }
 
 .circle{
@@ -143,6 +144,7 @@ img{
   box-shadow: ;
   border-radius:50%;
   visibility: visible;
+  z-index: 2;
 
   }
 
@@ -165,7 +167,7 @@ header{
   position: fixed;
   padding: 1% 1% 0% 1%;
   background-color: rgba(13, 19, 33, 0.7);
-  z-index: 3;
+  z-index: 4;
   top: 0;
   left: 0;
 }
@@ -221,8 +223,9 @@ a:hover{
 /*--- End Navigation ---*/
 
 #introduction{
-  height: 350px;
   width: 100%;
+  padding-bottom: 2%;
+  height: auto;
   text-align: center;
   overflow: hidden;
 }
@@ -246,7 +249,8 @@ a:hover{
 
 #portfolio{
   background-color: #49516F;
-  height: 800px;
+  width: 100%;
+  height: auto;
 }
 
 #portfolio h1{
@@ -330,14 +334,9 @@ a:hover{
 /*--- Start Footer ---*/
 footer{
   background: #FFFBF9;
-  width: 100%;
-  height: 250px;
-  overflow: hidden;
-}
-
-.thirds{
   padding: 2%;
-  overflow: hidden;
+  width: 100%;
+  height: auto;
 }
 
 footer p{
@@ -364,9 +363,6 @@ footer p{
 }
 
 @media screen and (max-width: 1280px){
-  #portfolio{
-    height: 1400px;
-  }
   footer p{
     visibility: hidden;
   }
@@ -377,9 +373,6 @@ footer p{
 }
 
 @media screen and (max-width: 850px){
-  #portfolio{
-    height: 1370px;
-  }
 
   #menu-icon{
     visibility: visible;
@@ -390,6 +383,7 @@ footer p{
   }
 
   header{
+    height: 50%;
     position: static;
   }
 
@@ -399,11 +393,6 @@ footer p{
 
   nav ul{
     visibility: hidden;
-  }
-
-  footer{
-    padding: 2%;
-    height: 200px;
   }
 
   .circle{
@@ -418,8 +407,8 @@ footer p{
 }
 @media screen and (max-width: 600px){
 
-  #portfolio{
-    height: 900px;
+  footer{
+
   }
 
   body{
@@ -427,11 +416,7 @@ footer p{
   }
 
   header{
-    height: 4%;
-    position: static;
-  }
-  footer{
-    margin-top: 100px;
+    height: 50%;
   }
 
   .xop-grid li {
