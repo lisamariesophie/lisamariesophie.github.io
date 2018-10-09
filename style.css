@@ -136,11 +136,11 @@ img{
 .circle{
   margin: 0 auto;
   position: absolute;
-  top: 20%;
+  top: 25%;
   left: 40%;
   background-image:url("./img/pictures/profile.jpg");
   background-size: 100%;
-  width:22%;
+  width:25%;
   box-shadow: ;
   border-radius:50%;
   visibility: visible;
@@ -187,8 +187,8 @@ nav{
   background-color: rgba(255, 251, 249, 0.7);
   background: url('./img/icons/menu.png') no-repeat;
   background-size: contain;
-  width: 3%;
-  height: 50%;
+  width: 5%;
+  height: 55%;
 }
 
 ul{
@@ -334,7 +334,7 @@ a:hover{
 /*--- Start Footer ---*/
 footer{
   background: #FFFBF9;
-  padding: 2%;
+  padding-top: 2%;
   width: 100%;
   height: auto;
 }
@@ -382,22 +382,12 @@ footer p{
     margin-bottom: 8%;
   }
 
-  header{
-    height: 50%;
-    position: static;
-  }
-
   body{
     font-size: 80%;
   }
 
   nav ul{
     visibility: hidden;
-  }
-
-  .circle{
-    width: 20%;
-    top: 15%;
   }
 
   .icon-wrap{
@@ -407,28 +397,18 @@ footer p{
 }
 @media screen and (max-width: 600px){
 
-  footer{
-
-  }
-
   body{
     font-size: 70%;
   }
 
   header{
-    height: 50%;
+    height: 3.5%;
   }
 
   .xop-grid li {
   	width: 300px;
   	height: 180px;
   	margin: 10px;
-  }
-
-  .circle{
-    width: 25%;
-    top: 8%;
-    border:
   }
 
   .icon-wrap{
