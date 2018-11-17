@@ -375,7 +375,7 @@ footer p{
     padding: 1%;
     margin: 0% 4%;
     float: right;
-    background: url('./img/icons/menu.png') no-repeat;
+    background: url('./img/icons/menu.png') no-repeat 98% center;
     background-size: contain;
     width: 20px;
     height: 18px;
@@ -402,24 +402,22 @@ footer p{
 
   header nav ul{
     height: 0;
-    background-color: #9EB3C2;
+    background: #9EB3C2;
     overflow: hidden;
-    -webkit-transition: background .5s linear;
-    -moz-transition: background .5s linear;
-    -ms-transition: background .5s linear;
-    -o-transition: background .5s linear;
-    transition: background .5s linear;
+
   }
 
   header nav ul.open{
     margin-top: 40px;
-    height: auto;
+    height: auto !important;
   }
 
   header nav ul li{
     float: none;
     text-align: center;
     width: 100%;
+    margin: 0;
+
   }
 
   header nav ul li a{
