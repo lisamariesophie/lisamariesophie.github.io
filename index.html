@@ -57,10 +57,11 @@
 			</ul>
 		</div>
 	</nav>
-	<div class="container">
-		<section id="about">
-			<!-- <h2>Skills</h2>
-			<div class="row h-100">
+
+	<section id="about">
+		<div class="container">
+			<h2>Skills</h2>
+			<!-- <div class="row h-100">
 				<div class="col-4 text-center">
 					<div class="skills text-center">
 						<i class="fas fa-tablet-alt"></i><br>
@@ -84,12 +85,13 @@
 				</div>
 			</div> -->
 			<div class="row">
-				<div class="inner col-xl-4 col-lg-6 col-sm-12 my-auto text-center">
+				<div class="inner col-xl-4 col-lg-6 col-md-6 col-xs-12 my-auto text-center">
 					<img id="profile" src="./img/pictures/profile.jpg" alt="">
-					<p>I'm a 3rd year computer science student at Aalen University, Germany. I have a passion for building
+					<p>I'm a 3rd year computer science student at Aalen University, Germany. I have a passion for
+						building
 						user-friendly and responsive websites.</p>
 				</div>
-				<div class="inner col-lg-8 col-md-6 col-sm-12 my-auto">
+				<div class="inner col-lg-8 col-md-6 col-xs-12 my-auto">
 					<h3>Webdevelopment</h3>
 					<div class="progress">
 						<div class="progress-bar" id="bar-html" role="progressbar" aria-valuenow="0" aria-valuemin="0"
@@ -110,8 +112,8 @@
 						</div>
 					</div>
 					<div class="progress">
-						<div class="progress-bar" id="bar-angular" role="progressbar" aria-valuenow="0" aria-valuemin="0"
-							aria-valuemax="100">
+						<div class="progress-bar" id="bar-angular" role="progressbar" aria-valuenow="0"
+							aria-valuemin="0" aria-valuemax="100">
 							<span>Angular</span>
 						</div>
 					</div>
@@ -124,7 +126,7 @@
 					<div class="progress">
 						<div class="progress-bar" id="bar-rest" role="progressbar" aria-valuenow="0" aria-valuemin="0"
 							aria-valuemax="100">
-							<span>REST-Api & JSON</span>
+							<span>REST&JSON</span>
 						</div>
 					</div>
 					<h3>Software & Appdevelopment</h3>
@@ -141,9 +143,9 @@
 						</div>
 					</div>
 					<div class="progress">
-						<div class="progress-bar" id="bar-flutter" role="progressbar" aria-valuenow="0" aria-valuemin="0"
-							aria-valuemax="100">
-							<span>Flutter/Dart</span>
+						<div class="progress-bar" id="bar-flutter" role="progressbar" aria-valuenow="0"
+							aria-valuemin="0" aria-valuemax="100">
+							<span>Flutter</span>
 						</div>
 					</div>
 					<div class="progress">
@@ -154,9 +156,11 @@
 					</div>
 				</div>
 			</div>
-		</section>
-		<hr>
-		<section id="projects">
+		</div>
+	</section>
+	<hr>
+	<section id="projects">
+		<div class="container">
 			<h2>Projects</h2>
 			<div class="card-deck">
 				<div class="card">
@@ -164,7 +168,8 @@
 					<div class="card-body">
 						<h5 class="card-title">Sweet&Salty Shop</h5>
 						<p class="card-text">A simple online shop demo</p>
-						<a class="btn btn-primary" href="https://condescending-knuth-3e8f3c.netlify.com" target="blank">Visit
+						<a class="btn btn-primary" href="https://condescending-knuth-3e8f3c.netlify.com"
+							target="blank">Visit
 							Website</a>
 					</div>
 				</div>
@@ -172,30 +177,34 @@
 					<img class="card-img-top" src="./img/pictures/crud.png" alt="Card image cap">
 					<div class="card-body">
 						<h5 class="card-title">Contact Management</h5>
-						<p class="card-text">Create-Read-Update-Delete Demo with Google Firebase Firestore as database. Feel free to
+						<p class="card-text">Create-Read-Update-Delete Demo with Google Firebase Firestore as database.
+							Feel free to
 							test. :)</p>
-						<a class="btn btn-primary" href="https://is445courseproject.web.app" target="blank">Visit Website</a>
+						<a class="btn btn-primary" href="https://is445courseproject.web.app" target="blank">Visit
+							Website</a>
 					</div>
 				</div>
 				<div class="card">
 					<img class="card-img-top" src="..." alt="Card image cap">
 					<div class="card-body">
 						<h5 class="card-title">Card title</h5>
-						<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-							content. This card has even longer content than the first to show that equal height action.</p>
+						<p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+							additional
+							content. This card has even longer content than the first to show that equal height action.
+						</p>
 					</div>
 				</div>
 			</div>
-		</section>
-		<hr>
+		</div>
+	</section>
+	<hr>
 
-	</div>
 
 	<section id="contact">
 		<div class="container">
 			<h2>Contact</h2>
-			<form class="needs-validation" novalidate id="contactForm" action="mailto:lisamariehege@gmail.com" method="post"
-				enctype="text/plain">
+			<form class="needs-validation" novalidate id="contactForm" action="mailto:lisamariehege@gmail.com"
+				method="post" enctype="text/plain">
 				<div class="form-row">
 					<div class="form-group col-12">
 						<input type="text" name="name" class="form-control" id="name" placeholder="Name" required>
@@ -203,8 +212,8 @@
 						<div class="invalid-feedback">No, you missed this one.</div>
 					</div>
 					<div class="form-group col-12">
-						<input type="email" name="email" class="form-control" id="email" pattern="^([- \w\d\u00c0-\u024f]+)$"
-							required="required" size="20" spellcheck="false"
+						<input type="email" name="email" class="form-control" id="email"
+							pattern="^([- \w\d\u00c0-\u024f]+)$" required="required" size="20" spellcheck="false"
 							pattern="^(([-\w\d]+)(\.[-\w\d]+)*@([-\w\d]+)(\.[-\w\d]+)*(\.([a-zA-Z]{2,5}|[\d]{1,3})){1,2})$"
 							placeholder="Email" required>
 						<div class="invalid-feedback">
@@ -214,7 +223,8 @@
 				</div>
 				<div class="form-row">
 					<div class="form-group col-md-12">
-						<textarea name="message" class="form-control" id="message" rows="5" placeholder="Your message"></textarea>
+						<textarea name="message" class="form-control" id="message" rows="5"
+							placeholder="Your message"></textarea>
 					</div>
 				</div>
 				<button id="btnSubmit" type="submit" class="btn btn-primary">Send</button>
@@ -241,13 +251,13 @@
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
 		integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
-	</script>
+		</script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
 		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-	</script>
+		</script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
 		integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
-	</script>
+		</script>
 </body>
 
 </html>

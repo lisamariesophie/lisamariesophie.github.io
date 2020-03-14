@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Spartan&display=swap');
-
-*,
-html {
+*, html {
   margin: 0;
   padding: 0;
 }
@@ -12,6 +10,8 @@ html {
 
 body {
   font-family: 'Spartan', sans-serif;
+  font-size: 14px;
+  color: #173C53;
 }
 
 svg {
@@ -70,6 +70,7 @@ header {
   background: none;
   border: 2px solid #E4EA3A;
   color: #E4EA3A;
+  font-size: 13px;
 }
 
 .btn:hover {
@@ -80,23 +81,24 @@ header {
 
 .navbar {
   background: #1b4965 !important;
-  font-size: 20px;
+  font-size: 16px;
   border-bottom: 3px solid #E4EA3A;
 }
 
-.nav-link,
-.navbar-brand {
+.nav-link, .navbar-brand {
   color: #f4f4f4 !important;
   cursor: pointer;
+}
+
+.navbar-toggler-icon {
+  height: 30px !important;
 }
 
 .nav-link {
   margin-right: 1em !important;
 }
 
-.nav-link:hover,
-.nav-link:active,
-.nav-link:focus {
+.nav-link:hover, .nav-link:active, .nav-link:focus {
   color: #E4EA3A !important;
 }
 
@@ -105,7 +107,8 @@ header {
 }
 
 .navbar-toggler {
-  background: #fff !important;
+  background: #E4EA3A !important;
+  color: #fff !important;
 }
 
 .active {
@@ -117,8 +120,7 @@ header {
   width: 95%;
 }
 
-header,
-section {
+header, section {
   padding: 80px 0px;
 }
 
@@ -126,22 +128,28 @@ section {
   margin: 50px 0;
 }
 
-h2,
-h3, 
-h4 {
+h1 {
+  font-size: 28px;
+}
+
+p {
+  font-size: 14px;
+}
+
+h2, h3, h4 {
   color: #173C53;
 }
 
 h3 {
-  font-size: 20px;
+  font-size: 16px;
   margin: 15px 0;
 }
 
 h2 {
-  font-size: 36px;
+  font-size: 26px;
   text-decoration: underline;
   text-transform: uppercase;
-  margin-bottom: 24px;
+  margin-bottom: 30px;
   text-align: center;
 }
 
@@ -155,6 +163,18 @@ hr {
 
 .inner {
   padding: 0 3%;
+}
+
+#projects {
+  background: url('./img/pictures/bg.png');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: top center;
+  position: relative;
+}
+
+#projects h2 {
+  color: #E4EA3A;
 }
 
 /* 
@@ -172,8 +192,8 @@ hr {
 } */
 
 .progress {
-  margin: 20px 0 !important;
-  height: 30px;
+  margin: 10px 0 !important;
+  height: 22px;
   background: #CBD9E2;
 }
 
@@ -192,14 +212,15 @@ hr {
   font-weight: bold;
   letter-spacing: 1px;
   text-transform: uppercase;
-  padding-left: 15px;
-  font-size: 14px;
+  padding-left: 5px;
+  font-size: 10px;
 }
 
 #profile {
   object-fit: cover;
   min-width: 100px;
   width: 100%;
+  max-width: 250px;
   border-radius: 50%;
   margin-bottom: 20px;
 }
@@ -209,9 +230,15 @@ hr {
   margin-bottom: 30px !important;
 }
 
+.card-title {
+  font-size: 16px;
+  font-weight: 600;
+}
+
 .card-body {
   position: relative;
   padding-bottom: 55px;
+  font-size: 12px;
 }
 
 .card-body a {
@@ -221,12 +248,11 @@ hr {
 }
 
 #contactForm {
-  margin: 0 25%;
+  margin: 0 10%;
 }
 
-#contactForm input[aria-invalid="true"], textarea[aria-invalid="true"] {
-    border: 1px solid #f00;
-    box-shadow: 0 0 4px 0 #f00;
+#contactForm .btn {
+  float: right;
 }
 
 footer {
@@ -236,6 +262,7 @@ footer {
 }
 
 /* footer */
+
 footer {
   width: 100%;
   display: inline-block;
@@ -258,22 +285,80 @@ footer img {
   width: 45px;
 }
 
-
 @media (min-width: 576px) {
   .container {
-    width: 90%;
+    width: 95%;
+  }
+  body {
+    font-size: 14px;
+  }
+  .progress {
+    margin: 15px 0 !important;
+    height: 22px;
+  }
+  .progress-bar span {
+    padding-left: 10px;
+    font-size: 12px;
+  }
+  #contactForm {
+    margin: 0 15%;
+  }
+  .btn {
+    font-size: 14px;
   }
 }
 
 @media (min-width: 768px) {
   .container {
-    width: 80%;
+    width: 85%;
   }
-
+  body {
+    font-size: 15px;
+  }
+  h2 {
+    font-size: 32px;
+  }
+  .progress {
+    margin: 20px 0 !important;
+    height: 24px;
+  }
+  .progress-bar span {
+    padding-left: 10px;
+    font-size: 12px;
+  }
+  #contactForm {
+    margin: 0 20%;
+  }
+  .btn {
+    font-size: 15px;
+  }
 }
 
 @media (min-width: 992px) {
   .container {
     width: 75%;
+  }
+  body {
+    font-size: 15px;
+  }
+  h2 {
+    font-size: 32px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  .navbar {
+    height: 45px !important;
+  }
+  .progress {
+    margin: 20px 0 !important;
+    height: 30px;
+  }
+  .progress-bar span {
+    padding-left: 10px;
+    font-size: 13px;
+  }
+  #contactForm {
+    margin: 0 25%;
   }
 }
