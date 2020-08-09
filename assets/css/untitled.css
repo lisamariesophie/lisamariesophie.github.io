@@ -1,0 +1,83 @@
+.container {
+  max-width: 1500px;
+}
+
+a {
+  color: #EF8354;
+}
+
+a:hover {
+  color: #BFC0C0 !important;
+  text-decoration: none !important;
+}
+
+.bg-secondary {
+  background-color: #2D3142 !important;
+}
+
+.text-primary {
+  color: #fff!important;
+}
+
+.bg-primary {
+  background-color: #4F5D75 !important;
+}
+
+hr.star-light:after {
+  color: #fff;
+  background-color: #EF8354;
+}
+
+.btn-primary {
+  background-color: #BFC0C0;
+  border-color: #BFC0C0;
+}
+
+.btn-primary:active, .btn-primary:focus, .btn-primary:hover {
+  background-color: #EF8354;
+  border-color: #EF8354;
+}
+
+.portfolio .portfolio-item .portfolio-item-caption {
+  transition: all .5s ease;
+  opacity: 0;
+  background-color: rgba(239, 131, 84,.9);
+}
+
+.progress {
+  height: 30px;
+  margin-bottom: 15px;
+}
+
+.progress-bar.progress-bar-animated {
+  background-color: #2D3142;
+}
+
+.progress-bar span {
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding-left: 15px;
+  font-size: 15px;
+  text-align: left;
+  width: 0;
+}
+
+.wrap {
+  width: 70%;
+}
+
+
+#mainNav .navbar-nav>li.nav-item>a.nav-link.active {
+  background: #EF8354 ;
+}
+
+.footer {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: #2D3142;
+  color: #fff;
+}
+
+.copyright {
+  background-color: #EF8354;
+}
