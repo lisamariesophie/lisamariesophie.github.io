@@ -1,5 +1,6 @@
 .container {
   max-width: 1500px;
+  width: ;
 }
 
 body {
@@ -71,7 +72,7 @@ hr.star-light:after {
 }
 
 .wrap {
-  width: 70%;
+  width: 80%;
 }
 
 
@@ -106,6 +107,25 @@ hr.star-light:after {
 }
 
 @media (min-width: 768px) {
+  .container {
+    width: 80%;
+  }
+
+  .modal-xl {
+    width: 90%;
+   max-width:1200px;
+  }
+}
+
+@media (max-width: 768px) {
+.wrap{
+  width: 90%;
+}
+
+  .caption{
+    width: 100%;
+  }
+
   .modal-xl {
     width: 90%;
    max-width:1200px;
