@@ -2,6 +2,10 @@
   max-width: 1500px;
 }
 
+body {
+  font-size: 18px;
+}
+
 a {
   color: #EF8354;
 }
@@ -9,6 +13,10 @@ a {
 a:hover {
   color: #BFC0C0 !important;
   text-decoration: none !important;
+}
+
+.portfolio-item  {
+  border: 1px solid #ccc;
 }
 
 .bg-secondary {
@@ -29,13 +37,13 @@ hr.star-light:after {
 }
 
 .btn-primary {
-  background-color: #BFC0C0;
-  border-color: #BFC0C0;
+  background-color: #EF8354;
+  border-color: #EF8354;
 }
 
 .btn-primary:active, .btn-primary:focus, .btn-primary:hover {
-  background-color: #EF8354;
-  border-color: #EF8354;
+  background-color: #4F5D75 !important;
+  border-color: #4F5D75 !important;
 }
 
 .portfolio .portfolio-item .portfolio-item-caption {
@@ -80,4 +88,26 @@ hr.star-light:after {
 
 .copyright {
   background-color: #EF8354;
+}
+
+.caption {
+  width: 70%;
+  margin: 0 auto;
+}
+
+
+.caption ul {
+  text-align: left;
+  /* background: #2D3142; */
+  border: 2px dotted #2D3142;
+  list-style-type: square;
+  /* color: #fff; */
+  padding: 2% 10%;
+}
+
+@media (min-width: 768px) {
+  .modal-xl {
+    width: 90%;
+   max-width:1200px;
+  }
 }
