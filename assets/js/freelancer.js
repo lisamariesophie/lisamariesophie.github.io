@@ -32,16 +32,16 @@
 
   // Activate scrollspy to add active class to navbar items on scroll
   $('body').scrollspy({
-    target: '#mainNav',
+    target: '#mainnav',
     offset: 80
   });
 
   // Collapse Navbar
   var navbarCollapse = function() {
-    if ($("#mainNav").offset().top > 100) {
-      $("#mainNav").addClass("navbar-shrink");
+    if ($("#mainnav").offset().top > 100) {
+      $("#mainnav").addClass("navbar-shrink");
     } else {
-      $("#mainNav").removeClass("navbar-shrink");
+      $("#mainnav").removeClass("navbar-shrink");
     }
   };
   // Collapse now if page is not at top
@@ -61,3 +61,22 @@
   });
 
 })(jQuery); // End of use strict
+
+window.onscroll = function() {myFunction()};
+
+// Get the navbar
+var navbar = document.getElementById("mainnav");
+
+// Get the offset position of the navbar
+var sticky = navbar.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+
+baguetteBox.run('.tz-gallery');

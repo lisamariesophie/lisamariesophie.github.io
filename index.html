@@ -6,14 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Home - Lisa-Marie H</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic">
     <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/untitled.css">
+
 </head>
 
 <body id="page-top">
-    <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-secondary text-uppercase" id="mainNav">
+
+    <header class="text-primary masthead bg-primary text-white text-center overlay">
+        <div class="container"><img class="rounded-circle img-fluid d-block mx-auto mb-5" src="assets/img/profile.jpg"
+                width="350" height="350">
+            <h1>Lisa-Marie Hege</h1>
+            <h3 class="mb-2">B.Sc. Computer Science Student - Web Development - Game Development</h3>
+        </div>
+        </div>
+    </header>
+    <nav class="navbar navbar-light navbar-expand-lg bg-secondary text-uppercase" id="mainnav">
         <div class="container"><button data-toggle="collapse" data-target="#navbarResponsive"
                 class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded"
                 aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i
@@ -30,44 +40,43 @@
             </div>
         </div>
     </nav>
-    <header class="text-primary masthead bg-primary text-white text-center overlay">
-
-        <div class="container"><img class="rounded-circle img-fluid d-block mx-auto mb-5"
-                src="assets/img/2020-08-06%2020_41_17.418+0200.jpg" width="300" height="300">
-            <h1>Lisa-Marie Hege</h1>
-            <hr class="star-light">
-            <h2 class="font-weight-light mb-0">B.Sc. Computer Science Student - Web Development - Game Development</h2>
-        </div>
-        </div>
-    </header>
     <section id="portfolio" class="portfolio">
         <div class="container">
-            <h2 class="text-uppercase text-center text-secondary">Portfolio</h2>
-            <hr class="star-dark mb-5">
-            <div class="row">
-                <div class="col-md-12 col-lg-6">
-                    <a class="d-block mx-auto portfolio-item" data-toggle="modal" href="#portfolio-modal-2">
-                        <div class="d-flex portfolio-item-caption position-absolute h-100 w-100">
-                            <div class="my-auto portfolio-item-caption-content w-100 text-center text-white"><i
-                                    class="fa fa-search-plus fa-3x"></i></div>
-                        </div><img class="img-fluid" src="assets/img/SquizzlePrev.png">
-                    </a>
-                </div>
-                <div class="col-md-12 col-lg-6">
-                    <a class="d-block mx-auto portfolio-item" data-toggle="modal" href="#portfolio-modal-3">
-                        <div class="d-flex portfolio-item-caption position-absolute h-100">
-                            <div class="my-auto portfolio-item-caption-content w-100 text-center text-white"><i
-                                    class="fa fa-search-plus fa-3x"></i></div>
-                        </div><img class="img-fluid" src="assets/img/GameView.png">
-                    </a>
-                </div>
-                <div class="col-md-12 col-lg-6">
-                    <a class="d-block mx-auto portfolio-item" data-toggle="modal" href="#portfolio-modal-1">
-                        <div class="d-flex portfolio-item-caption position-absolute h-100 w-100" style="height: 500;">
-                            <div class="my-auto portfolio-item-caption-content w-100 text-center text-white"><i
-                                    class="fa fa-search-plus fa-3x"></i></div>
-                        </div><img class="img-fluid" src="assets/img/crud.png">
-                    </a>
+            <h2 class="text-uppercase text-center text-dark">Portfolio</h2>
+            <div class="gallery-container">
+                <div class="tz-gallery">
+                    <div class="row">
+                        <div class="col-sm-6 col-xs-12">
+                            <a class="info" data-toggle="modal" href="#portfolio-modal-2">
+                                <div class="hovereffect">
+                                    <img class="img-responsive" src="./assets/img/SquizzlePrev.png" alt="">
+                                    <div class="overlay">
+                                        <h2>View Project</h2>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-sm-6 col-xs-12">
+                            <a class="info" data-toggle="modal" href="#portfolio-modal-3">
+                                <div class="hovereffect">
+                                    <img class="img-responsive" src="./assets/img/GameView.png" alt="">
+                                    <div class="overlay">
+                                        <h2>View Project</h2>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-sm-6 col-xs-12">
+                            <a class="info" data-toggle="modal" href="#portfolio-modal-2">
+                                <div class="hovereffect">
+                                    <img class="img-responsive" src="./assets/img/crud.png" alt="">
+                                    <div class="overlay">
+                                        <h2>View Project</h2>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -75,7 +84,6 @@
     <section id="about" class="bg-primary text-white mb-0">
         <div class="container">
             <h2 class="text-uppercase text-center text-white">About</h2>
-            <hr class="star-light mb-5">
             <div class="wrap text-center mt-4 mx-auto">
                 Hi, I'm Lisa! I'm a 4th year computer science student graduating from Aalen University in February 2021.
                 <br>About 10 years ago, I started getting into building simple responsive websites with HTML, CSS and
@@ -185,17 +193,14 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4 mb-5 mb-lg-0 mx-auto">
-                    <h4 class="text-uppercase">Around the Web</h4>
+                    <h4 class="mb-4 text-uppercase">Around the Web</h4>
                     <ul class="list-inline">
-                        <li class="list-inline-item"><a
-                                class="btn btn-outline-light btn-social text-center rounded-circle" role="button"
+                        <li class="list-inline-item"><a class="btn btn-social text-center" role="button"
                                 href="https://github.com/lisamariesophie"><i class="fa fa-github fa-fw"></i></a></li>
-                        <li class="list-inline-item"><a
-                                class="btn btn-outline-light btn-social text-center rounded-circle" role="button"
+                        <li class="list-inline-item"><a class="btn btn-social text-center" role="button"
                                 href="https://www.linkedin.com/in/lisamariehege/"><i
                                     class="fa fa-linkedin fa-fw"></i></a></li>
-                        <li class="list-inline-item"><a
-                                class="btn btn-outline-light btn-social text-center rounded-circle" role="button"
+                        <li class="list-inline-item"><a class="btn btn-social text-center" role="button"
                                 href="https://www.xing.com/profile/LisaMarie_Hege/cv"><i
                                     class="fa fa-xing fa-fw"></i></a></li>
                     </ul>
@@ -219,8 +224,8 @@
                     <div class="container text-center">
                         <div class="row">
                             <div class="col-lg-12 mx-auto">
-                                <h2 class="text-uppercase text-secondary mb-0">Contact Management</h2>
-                                <hr class="star-dark mb-5"><img class="img-fluid mb-5" src="assets/img/crud.png">
+                                <h2 class="text-uppercase text-secondary mb-4">Contact Management</h2>
+                                <img class="img-fluid mb-5" src="assets/img/crud.png">
                                 <div class="caption">
                                     <p class="mb-5">A simple Create-Read-Update-Delete Application for Contact
                                         Information with Form Validation. A University Course Project for IS445-Internet
@@ -257,11 +262,12 @@
                     <div class="container text-center">
                         <div class="row">
                             <div class="col-lg-12 mx-auto">
-                                <h2 class="text-uppercase text-secondary mb-0">Squizzle</h2>
-                                <hr class="star-dark mb-5">
-                                <div id="carouselExampleIndicators" class="carousel slide" data-interval="false" data-ride="carousel">
+                                <h2 class="text-uppercase text-secondary mb-5">Squizzle</h2>
+                                <div id="carouselExampleIndicators" class="carousel slide" data-interval="false"
+                                    data-ride="carousel">
                                     <ol class="carousel-indicators">
-                                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active">
+                                        </li>
                                         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                                         <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
                                         <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
@@ -276,70 +282,84 @@
                                     </ol>
                                     <div class="carousel-inner">
                                         <div class="carousel-item active">
-                                            <img class="d-block w-100" src="./assets/img/squizzle/Unbenannt.PNG" alt="First slide">
+                                            <img class="d-block w-100" src="./assets/img/squizzle/Unbenannt.PNG"
+                                                alt="First slide">
                                             <div class="carousel-caption d-none d-md-block">
                                                 <h5>Login</h5>
-                                                <p>Unterscheidung zwischen Admin und Standard User inkl. Auth Guard mit Benutzer-Rollen.</p>
-                                              </div>
+                                                <p>Unterscheidung zwischen Admin und Standard User inkl. Auth Guard mit
+                                                    Benutzer-Rollen.</p>
+                                            </div>
                                         </div>
                                         <div class="carousel-item">
-                                            <img class="d-block w-100" src="./assets/img/squizzle/Topics.PNG" alt="Second slide">
+                                            <img class="d-block w-100" src="./assets/img/squizzle/Topics.PNG"
+                                                alt="Second slide">
                                             <div class="carousel-caption d-none d-md-block">
                                                 <h5>Admin: Quiz Übersicht</h5>
-                                              </div>
+                                            </div>
                                         </div>
                                         <div class="carousel-item">
-                                            <img class="d-block w-100" src="./assets/img/squizzle/Questions.PNG" alt="Third slide">
+                                            <img class="d-block w-100" src="./assets/img/squizzle/Questions.PNG"
+                                                alt="Third slide">
                                             <div class="carousel-caption d-none d-md-block">
                                                 <h5>Admin: Übersicht Fragen</h5>
                                                 <p>Create & Delete von Fragen</p>
-                                              </div>
+                                            </div>
                                         </div>
                                         <div class="carousel-item">
                                             <img class="d-block w-100" src="./assets/img/squizzle/MC.PNG" alt="4 slide">
                                         </div>
                                         <div class="carousel-item">
-                                            <img class="d-block w-100" src="./assets/img/squizzle/MC2.PNG" alt="Third slide">
+                                            <img class="d-block w-100" src="./assets/img/squizzle/MC2.PNG"
+                                                alt="Third slide">
                                             <div class="carousel-caption d-none d-md-block">
                                                 <h5>Admin: Erstellen von Fragen</h5>
                                                 <p>Arten: Multiple Choice, Freitext, Lückentext</p>
-                                              </div>
+                                            </div>
                                         </div>
                                         <div class="carousel-item">
-                                            <img class="d-block w-100" src="./assets/img/squizzle/Preview.PNG" alt="Third slide">
+                                            <img class="d-block w-100" src="./assets/img/squizzle/Preview.PNG"
+                                                alt="Third slide">
                                         </div>
                                         <div class="carousel-item">
-                                            <img class="d-block w-100" src="./assets/img/squizzle/UserQuiz.PNG" alt="Third slide">
+                                            <img class="d-block w-100" src="./assets/img/squizzle/UserQuiz.PNG"
+                                                alt="Third slide">
                                             <div class="carousel-caption d-none d-md-block">
                                                 <h5>User: Quiz</h5>
-                                                <p>Ein Quiz kann über einen Link aufgerufen werden und wird dem User nach Login hinzugefügt</p>
-                                              </div>
+                                                <p>Ein Quiz kann über einen Link aufgerufen werden und wird dem User
+                                                    nach Login hinzugefügt</p>
+                                            </div>
                                         </div>
                                         <div class="carousel-item">
-                                            <img class="d-block w-100" src="./assets/img/squizzle/UserQuizScores.PNG" alt="Third slide">
+                                            <img class="d-block w-100" src="./assets/img/squizzle/UserQuizScores.PNG"
+                                                alt="Third slide">
                                             <div class="carousel-caption d-none d-md-block">
                                                 <h5>User: Quiz Ergebnisse</h5>
-                                                <p>Richtige/Falsche Antworten werden markiert. Freitext Aufgaben werden später vom Quiz Ersteller bewertet.</p>
-                                              </div>
+                                                <p>Richtige/Falsche Antworten werden markiert. Freitext Aufgaben werden
+                                                    später vom Quiz Ersteller bewertet.</p>
+                                            </div>
                                         </div>
                                         <div class="carousel-item">
-                                            <img class="d-block w-100" src="./assets/img/squizzle/UserQuizScores2.PNG" alt="Third slide">
+                                            <img class="d-block w-100" src="./assets/img/squizzle/UserQuizScores2.PNG"
+                                                alt="Third slide">
                                         </div>
                                         <div class="carousel-item">
-                                            <img class="d-block w-100" src="./assets/img/squizzle/AdminScores.PNG" alt="Third slide">
+                                            <img class="d-block w-100" src="./assets/img/squizzle/AdminScores.PNG"
+                                                alt="Third slide">
                                             <div class="carousel-caption d-none d-md-block">
                                                 <h5>Admin: Teilnehmer Ergebnisse</h5>
-                                                <p>Übersicht über die Teilnehmer mit jeweils erzielten Punkten und der Möglichkeit zur individuellen Korrektur.</p>
-                                              </div>
+                                                <p>Übersicht über die Teilnehmer mit jeweils erzielten Punkten und der
+                                                    Möglichkeit zur individuellen Korrektur.</p>
+                                            </div>
                                         </div>
                                         <div class="carousel-item">
-                                            <img class="d-block w-100" src="./assets/img/squizzle/AdminCorrect.PNG" alt="Third slide">
+                                            <img class="d-block w-100" src="./assets/img/squizzle/AdminCorrect.PNG"
+                                                alt="Third slide">
                                             <div class="carousel-caption d-none d-md-block">
                                                 <h5>Admin: Korrektur</h5>
                                                 <p>Freitext Aufgaben können verbessert und bewertet werden</p>
-                                              </div>
+                                            </div>
                                         </div>
-                                        
+
                                     </div>
                                     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
                                         data-slide="prev">
@@ -376,11 +396,11 @@
                 <div class="modal-footer pb-5">
                     <!-- <a class="btn btn-primary btn-lg mx-auto rounded-pill portfolio-modal-dismiss" role="button"
                         href="http://quizgenerator-6dc7c.firebaseapp.com/">View Live Version</a> -->
-                        <a class="btn btn-primary btn-lg mx-auto rounded-pill portfolio-modal-dismiss" role="button"
+                    <a class="btn btn-primary btn-lg mx-auto rounded-pill portfolio-modal-dismiss" role="button"
                         href="https://github.com/lisamariesophie/MIProject" target="blank">View on Github</a></div>
-                    </div>
             </div>
         </div>
+    </div>
     </div>
     <div class="modal text-center" role="dialog" tabindex="-1" id="portfolio-modal-3">
         <div class="modal-dialog modal-xl" role="document">
@@ -391,8 +411,8 @@
                     <div class="container text-center">
                         <div class="row">
                             <div class="col-lg-12 mx-auto">
-                                <h2 class="text-uppercase text-secondary mb-0">Shooting Toilet Paper</h2>
-                                <hr class="star-dark mb-5"><video width="100%" autoplay muted loop>
+                                <h2 class="text-uppercase text-secondary mb-4">Shooting Toilet Paper</h2>
+                                <video width="100%" autoplay muted loop>
                                     <source src="assets/video/KillTheVirusCompressed.mp4" type="video/mp4">
                                     Your browser does not support the video tag.
                                 </video>
