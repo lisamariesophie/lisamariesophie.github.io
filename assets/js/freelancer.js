@@ -78,5 +78,3 @@ function myFunction() {
     navbar.classList.remove("sticky");
   }
 }
-
-baguetteBox.run('.tz-gallery');
