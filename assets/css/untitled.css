@@ -281,8 +281,8 @@ font-weight: 600 !important;
   }
 
   .modal-xl {
-    width: 90%;
-   max-width:1200px;
+    width: 80%;
+    max-width:1200px;
   }
 }
 
