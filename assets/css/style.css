@@ -191,11 +191,7 @@ font-weight: 600 !important;
 }
 
 
-@media(max-width: 768px) {
-  body {
-      padding: 0;
-  }
-}
+
 
 /* Portfolio Modal */
 .caption {
@@ -237,11 +233,6 @@ font-weight: 600 !important;
   transition: 0.4s;
 }
 
-.progress-bar.progress-bar-animated:hover {
-  background-color: #E31B6D;
-  border-radius: 0;
-}
-
 .progress-bar span {
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -279,6 +270,9 @@ font-weight: 600 !important;
 }
 
 @media (min-width: 768px) {
+  body {
+    padding: 0;
+}
   .container {
     width: 90%;
   }
