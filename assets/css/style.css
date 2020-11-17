@@ -62,6 +62,10 @@ a:hover {
   text-decoration: none !important;
 }
 
+#playgame {
+  background-color: #233c59;
+}
+
 /* Navbar */
 .navbar {
   background-color: #05C2C9 !important;
