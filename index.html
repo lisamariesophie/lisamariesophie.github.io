@@ -13,6 +13,8 @@
     <link rel="stylesheet" type="text/css"
         href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
     <link rel="icon" type="image/png" href="assets/img/favicon-32x32.png">
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
 
 </head>
 
@@ -43,36 +45,36 @@
     </nav>
     <section id="portfolio" class="portfolio">
         <div class="container">
-            <h2 class="text-uppercase text-center text-dark">Portfolio</h2>
+            <h2 class="text-uppercase text-center text-dark mb-4">Portfolio</h2>
             <div class="gallery-container">
                 <div class="tz-gallery">
                     <div class="row">
                         <div class="col-sm-6 col-xs-12">
-                            <a class="info" data-toggle="modal" href="#portfolio-modal-2">
+                            <a class="info" data-toggle="modal" href="#squizzle-modal">
                                 <div class="hovereffect">
                                     <img class="img-responsive" src="./assets/img/SquizzlePrev.png" alt="">
                                     <div class="overlay">
-                                        <h2>View Project</h2>
+                                        <h2><span>View Project</span>Squizzle</h2>
                                     </div>
                                 </div>
                             </a>
                         </div>
                         <div class="col-sm-6 col-xs-12">
-                            <a class="info" data-toggle="modal" href="#portfolio-modal-3">
+                            <a class="info" data-toggle="modal" href="#shootingtoiletpaper-modal">
                                 <div class="hovereffect">
                                     <img class="img-responsive" src="./assets/img/GameView.png" alt="">
                                     <div class="overlay">
-                                        <h2>View Project</h2>
+                                        <h2><span>View Project & Play!</span>Shooting Toilet Paper</h2>
                                     </div>
                                 </div>
                             </a>
                         </div>
                         <div class="col-sm-6 col-xs-12">
-                            <a class="info" data-toggle="modal" href="#portfolio-modal-1">
+                            <a class="info" data-toggle="modal" href="#contactmanagement-modal">
                                 <div class="hovereffect">
                                     <img class="img-responsive" src="./assets/img/crud.png" alt="">
                                     <div class="overlay">
-                                        <h2>View Project</h2>
+                                        <h2><span>View Project</span>Contact Management</h2>
                                     </div>
                                 </div>
                             </a>
@@ -96,10 +98,8 @@
                 <br> In my
                 previous occupation, I
                 worked on company Cloud Applications with Angular, Node.js, REST(Swagger) & Google Firebase.
-                <br><br>Right now, I'm working on my Bachelor's Thesis at HRWorks GmbH (also in Webdevelopment) until
-                February 2021. <br>I'm currently looking for a Full-Time Job, preferably in Web- or Gamedevelopment,
-                starting
-                in March 2021.
+                <br><br>Right now, I'm working on my Bachelor's Thesis at HRWorks GmbH (in Webdevelopment) until
+                February 2021.
             </div>
             <div class="wrap text-center mt-4 mx-auto">
                 <p class="lead"></p>
@@ -193,7 +193,7 @@
     <div class="d-lg-none scroll-to-top position-fixed rounded"><a
             class="d-block js-scroll-trigger text-center text-white rounded" href="#page-top"><i
                 class="fa fa-chevron-up"></i></a></div>
-    <div class="modal text-center" role="dialog" tabindex="-1" id="portfolio-modal-1">
+    <div class="modal text-center" role="dialog" tabindex="-1" id="contactmanagement-modal">
         <div class="modal-dialog modal-xl" role="document">
             <div class="modal-content">
                 <div class="modal-header"><button type="button" class="close" data-dismiss="modal"
@@ -231,7 +231,7 @@
             </div>
         </div>
     </div>
-    <div class="modal text-center" role="dialog" tabindex="-1" id="portfolio-modal-2">
+    <div class="modal text-center" role="dialog" tabindex="-1" id="squizzle-modal">
         <div class="modal-dialog modal-xl" role="document">
             <div class="modal-content">
                 <div class="modal-header"><button type="button" class="close" data-dismiss="modal"
@@ -240,7 +240,7 @@
                     <div class="container text-center">
                         <div class="row">
                             <div class="col-lg-12 mx-auto">
-                                <h2 class="text-uppercase text-secondary mb-5">Squizzle</h2>
+                                <h1 class="text-uppercase text-secondary mb-5">Squizzle</h1>
                                 <div id="carouselExampleIndicators" class="carousel slide" data-interval="false"
                                     data-ride="carousel">
                                     <ol class="carousel-indicators">
@@ -379,7 +379,7 @@
         </div>
     </div>
     </div>
-    <div class="modal text-center" role="dialog" tabindex="-1" id="portfolio-modal-3">
+    <div class="modal text-center" role="dialog" tabindex="-1" id="shootingtoiletpaper-modal">
         <div class="modal-dialog modal-xl" role="document">
             <div class="modal-content">
                 <div class="modal-header"><button type="button" class="close" data-dismiss="modal"
@@ -388,22 +388,24 @@
                     <div class="container text-center">
                         <div class="row">
                             <div class="col-lg-12 mx-auto">
-                                <h2 class="text-uppercase text-secondary mb-4">Virus Platformer 2D
+                                <h2 class="text-uppercase text-secondary mb-4">Shooting Toilet Paper 2D (Play My Game!)
                                 </h2>
-                                <video width="100%" autoplay muted loop>
-                                    <source src="assets/video/KillTheVirusCompressed.mp4" type="video/mp4">
-                                    Your browser does not support the video tag.
-                                </video>
+                                <div class="webgl-content">
+                                    <div id="unityContainer" style="width: 100%; max-height: 640px"></div>
+                                    <div class="footer">
+                                        <div class="webgl-logo"></div>
+                                        <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
+                                    </div>
+                                </div>
                                 <div class="caption">
-                                    <p class="mb-5 my-5 text-center">A Unity 2D Platformer about fighting an evil virus
+                                    <p class="mb-5 my-5 text-center">University Game Development
+                                        (Single Developer) Project. <br>A Unity 2D Platformer about fighting an evil virus
                                         with
                                         toilet
                                         paper ;)
-                                        and finding a cure by collecting antigens. <br> <br>University Game Development
-                                        (Single Developer) Project. Programming, most assets were designed, drawn and
-                                        animated by me.
-                                        <br>There's only two levels right now, but you can play-test the game in browser
-                                        by clicking on the 'Play'-Button. ;)
+                                        and finding a cure by collecting antigens. <br> 
+                                        <br>There's only two levels right now, but you can try the game in browser
+                                        right on this page (PC only) ;) <br><br>Concept, Programming & most Assets created by me.
                                     </p>
                                     <ul>
                                         <h5 class="text-left">Skills used:</h5>
@@ -418,8 +420,6 @@
                 </div>
                 <div class="modal-footer pb-5 mx-auto">
                     <a class="btn btn-primary btn-lg  portfolio-modal-dismiss" role="button"
-                        href="/VirusPlatformer.html" target="blank">Play!</a>
-                    <a class="btn btn-primary btn-lg  portfolio-modal-dismiss" role="button"
                         href="https://github.com/lisamariesophie/Platformer2D" target="blank">View on Github</a></div>
             </div>
         </div>
@@ -431,6 +431,11 @@
     <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"></script>
     <script src="assets/js/freelancer.js"></script>
     <script src="assets/js/cookie-banner.js"></script>
+    <script src="TemplateData/UnityProgress.js"></script>
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+        var unityInstance = UnityLoader.instantiate("unityContainer", "Build/VirusPlatformer.json", { onProgress: UnityProgress });
+    </script>
 </body>
 
 </html>

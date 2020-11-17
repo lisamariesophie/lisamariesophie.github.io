@@ -11,7 +11,10 @@
 
 header {
   background: #1B242F !important;
+}
 
+.rounded-circle {
+  border: 2px #E31B6D solid;
 }
 
 body {
@@ -31,6 +34,13 @@ h1 {
 h2 {
   font-size: 32px !important;
   font-weight: 600;
+}
+
+h2 span {
+  font-weight: 600;
+  color: #E31B6D;
+  font-size: 16px;
+  display: block;
 }
 
 h3 {
@@ -163,15 +173,15 @@ font-weight: 600 !important;
 }
 
 .hovereffect:hover img {
-  filter: brightness(0.4);
-  -webkit-filter: brightness(0.4);
+  filter: brightness(0.2);
+  -webkit-filter: brightness(0.2);
 }
 
 .hovereffect h2 {
   text-transform: uppercase;
   text-align: center;
   position: relative;
-  font-size: 30px !important;
+  font-size: 24px !important;
   background-color: transparent;
   color: #FFF;
   padding: 4em 0;
