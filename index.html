@@ -15,7 +15,9 @@
     <link rel="icon" type="image/png" href="assets/img/favicon-32x32.png">
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
-
+    <script>
+        var unityInstance = UnityLoader.instantiate("unityContainer", "Build/VirusPlatformer.json", { onProgress: UnityProgress });
+    </script>
 </head>
 
 <body id="page-top">
@@ -414,7 +416,8 @@
                             <div class="col-lg-12 mx-auto">
                                 <h2 class="text-uppercase text-secondary mb-4">Shooting Toilet Paper 2D
                                 </h2>
-                                <video src="/assets/video/KillTheVirusCompressed.mp4" autoplay muted style="width: 100%;"></video>
+                                <video src="/assets/video/KillTheVirusCompressed.mp4" autoplay muted
+                                    style="width: 100%;"></video>
                                 <div class="caption">
                                     <p class="mb-5 my-5 text-center">University Game Development
                                         (Single Developer) Project. <br>A Unity 2D Platformer about fighting an evil
